@@ -1,0 +1,25 @@
+{
+  "name": "anotherwatch",
+  "version": "0.0.1",
+  "description": "AnotherWatch Web Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rei Kawai",
+  "dependencies" : {
+  },
+  "devDependencies" : {
+    "gulp": "3.8.7",
+    "gulp-util": "3.0.1",
+    "gulp-watch": "0.7.0",
+    "gulp-jade": "0.7.0",
+    "gulp-stylus": "1.3.0",
+    "nib": "1.0.3",
+    "gulp-base64": "0.1.1",
+    "gulp-concat": "2.3.4",
+    "gulp-coffee": "2.1.2",
+    "gulp-connect": "2.0.6",
+    "coffee-script": "1.8.0"
+  }
+}

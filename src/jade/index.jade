@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    script.
+      function browserLanguage() {
+        try {
+          return (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0,2)
+        }
+        catch(e) {
+          return undefined;
+        }
+      }
+      if (browserLanguage() == 'ja') { location.href = './ja.html'; }
+      else { location.href = './en.html'; }
+    meta(http-equiv="refresh", content="3;URL=./en.html")
