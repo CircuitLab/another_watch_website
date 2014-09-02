@@ -1,8 +1,14 @@
 doctype html
 html
   head
+    title
+      ="Another Watch"
     meta(charset="utf-8")
-    link(rel="stylesheet", href="css/ja.css")
+    meta(property="og:title", content="Another Watch")
+    meta(property="og:type", content="article")
+    meta(property="og:description", content="Another Watch はあなたの気持ちに合わせて時を刻む時計。生活をもっとハッピーにします。")
+    meta(property="og:site_name", content="Another Watch")
+    link(rel="stylesheet", href="css/main.css")
     script(src="js/app.js")
   body
     #fb-root
@@ -32,24 +38,171 @@ html
               =Tweet
         script.
           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-      #keyvisual
+
+      #keyvisual_ja
+
       #movie
         #movietitle
         iframe(width="560", height="315", src="//www.youtube.com/embed/h02gq27pScw?showinfo=0&rel=0", frameborder="0", allowfullscreen)
     #main
+      h1
+        ="About"
       #about_image
+      .caption
+        ="Another Watch はあなたの気持ちに合わせて時を刻む時計。生活をもっとハッピーにします。"
 
-      #howitworks_image
+      h1
+        ="How it works"
 
-      #whatitbrings_image
+      ol.howitworks_step
+        li
+          .first
+            p
+              ="Another Watch は"
+            p
+              ="アクションセンサーを内蔵"
+          #howitworks_step1
+        li
+          .second
+            p
+              ="あなたの動きを"
+            p
+              ="リアルタイムでトラッキング"
+          #howitworks_step2
+        li
+          .third
+            p
+              ="楽しんでいるのか、退屈しているのかを"
+            p
+              ="自動判定します。"
+          #howitworks_step3
+
+      .howitworks_down
+
+      ul.howitworks_mode
+
+        li.mode_name
+          p
+            ="楽しんでいるとき"
+          p
+            ="→Fun-mode"
+        li.mode_reason
+          p
+            ="たとえば、「盛り上がっている」、「飲み会を楽しんでいる」とき、Another Watch は fun-mode に。"
+          p
+            ="通常はあっという間に過ぎてしまう楽しい時間を、ゆっくりと刻みます。"
+
+      ol.howitworks_mode_step
+        li
+          #howitworks_mode1-1
+        li
+          #howitworks_mode1-2
+        li.step_right
+          .howitworks_right
+        li.step_clock
+          #howitworks_mode1-3
+
+      .mode_spacer
+
+      ul.howitworks_mode
+
+        li.mode_name
+          p
+            ="退屈しているとき"
+          p
+            ="→Bored-mode"
+        li.mode_reason
+          p
+            ="一方、「ほおづえをつく」、「退屈で頻繁に時計を見てしまう」とき、Another Watch は bored-mode に。"
+          p
+            ="通常はなかなか過ぎていかない退屈な時間を、さっさと進めます。"
+
+      ol.howitworks_mode_step
+        li
+          #howitworks_mode2-1
+        li
+          #howitworks_mode2-2
+        li.step_right
+          .howitworks_right
+        li.step_clock
+          #howitworks_mode2-3
+
+      h1
+        ="What it brings"
+      .caption
+        p
+          ="気持ちに合わせて時を進め、一人ひとりが自分の時間「パーソナルタイム」を持ち歩く時代。"
+        p
+          ="人と人の間に時差が生まれる世界では、さまざま変化が起こります。"
+
+      #whatitbrings_description
+        ul.whatitbrings_contents
+          li
+            #whatitbrings_image1
+            #whatitbrings_title1
+            p
+              ="ふたりの気持ちの差は時間の差に?"
+            p
+              ="デート中のカップルに気持ちの差があれば、"
+            p
+              ="バイバイの時間も変わってくる?"
+          li
+        ul.whatitbrings_contents
+          li
+          li
+            #whatitbrings_image2
+            #whatitbrings_title2
+            p
+              ="つまらない会議は、お先に失礼する時代。"
+            p
+              ="より楽しめる仕事をじっくりと。"
+            p
+              ="もう時給で働く仕組みはなくなる?"
+        ul.whatitbrings_contents
+          li
+            #whatitbrings_image3
+            #whatitbrings_title3
+            p
+              ="自分が興味を持った教科を、しっかり学ぶ時代。"
+            p
+              ="つまらない授業は、とっとと帰ってしまおう。"
+            p
+              ="みんなで同じ授業はもう受けない?"
+          li
+        ul.whatitbrings_contents
+          li
+          li
+            #whatitbrings_image4
+            #whatitbrings_title4
+            p
+              ="渋滞も満員電車も過去のモノ。"
+            p
+              ="一人ひとりがそれぞれの「パーソナルタイム」で行動すれば、"
+            p
+              ="混雑だって緩和する。"
+        ul.whatitbrings_contents
+          li
+            #whatitbrings_image5
+            #whatitbrings_title5
+            p
+              ="もっと未来、人類が宇宙で生活する時代。"
+            p
+              ="地球の自転で決めていた 1 日 24 時間のルールは必要なくなる。"
+            p
+              ="より人類がパッピーになれる「パーソナルタイム」が使われるはず。"
+          li
 
       #punchline
+        p
+          ="アインシュタインによれば、この宇宙には進み方の違う時間が実際に存在する。"
+        p
+          ="人類が「パーソナルタイム」を取り入れ、人の数だけ時間がある世界も、もうすぐそこ?"
 
       #name
 
     #footer
       ul.credit
-        li
+        li.title
           ="制作"
         li
           p
@@ -81,8 +234,13 @@ html
               li
                 ="鉢呂文秀"
           p.organization
-            ="AOI Pro"
+            ="AOI Pro."
           p.member
             ul
               li
                 ="久野了史"
+      ul.contact
+        li.title
+          ="CONTACT"
+        li
+          ="support-anotherwatch@uniba.jp"

@@ -1,8 +1,14 @@
 doctype html
 html
   head
+    title
+      ="Another Watch"
     meta(charset="utf-8")
-    link(rel="stylesheet", href="css/en.css")
+    meta(property="og:title", content="Another Watch")
+    meta(property="og:type", content="article")
+    meta(property="og:description", content="Another Watch shows the time in accordance to your mood, making your life happier.")
+    meta(property="og:site_name", content="Another Watch")
+    link(rel="stylesheet", href="css/main.css")
     script(src="js/app.js")
   body
     #fb-root
@@ -11,7 +17,7 @@ html
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=778519602210219&version=v2.0";
+        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=322876507872909&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     #head
@@ -32,18 +38,174 @@ html
               =Tweet
         script.
           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-      #keyvisual
+
+      #keyvisual_en
+
       #movie
         #movietitle
-        iframe(width="560", height="315", src="//www.youtube.com/embed/h02gq27pScw?showinfo=0&rel=0", frameborder="0", allowfullscreen)
+        iframe(width="560", height="315", src="//www.youtube.com/embed/6jXkCSZHGcI?showinfo=0&rel=0", frameborder="0", allowfullscreen)
     #main
+      h1
+        ="About"
       #about_image
+      .caption
+        ="Another Watch shows the time in accordance to your mood, making your life happier."
 
-      #howitworks_image
+      h1
+        ="How it works"
 
-      #whatitbrings_image
+      ol.howitworks_step
+        li
+          .first
+            p
+              ="Another Watch has a built-in action sensor. "
+          #howitworks_step1
+        li
+          .second
+            p
+              ="It tracks your activities. "
+          #howitworks_step2
+        li
+          .third
+            p
+              ="It can automatically tell whether"
+            p
+              ="you are having fun or feeling bored."
+          #howitworks_step3
+
+      .howitworks_down
+
+      ul.howitworks_mode
+
+        li.mode_name
+          p
+            ="When you're having fun"
+          p
+            ="→Fun-mode"
+        li.mode_reason
+          p
+            ="When you are excited, for example enjoying a drink,"
+          p
+            ="Another Watch will be in \"fun-mode\" in which time moves slowly for you."
+
+      ol.howitworks_mode_step
+        li
+          #howitworks_mode1-1
+        li
+          #howitworks_mode1-2
+        li.step_right
+          .howitworks_right
+        li.step_clock
+          #howitworks_mode1-3
+
+      .mode_spacer
+
+      ul.howitworks_mode
+
+        li.mode_name
+          p
+            ="When you’re feeling bored"
+          p
+            ="→Bored-mode"
+        li.mode_reason
+          p
+            ="When you have nothing to do or you feel everything is slow,"
+          p
+            ="Another Watch will be in \"bored-mode\" in which time moves forwards quickly for you."
+
+      ol.howitworks_mode_step
+        li
+          #howitworks_mode2-1
+        li
+          #howitworks_mode2-2
+        li.step_right
+          .howitworks_right
+        li.step_clock
+          #howitworks_mode2-3
+
+      h1
+        ="What it brings"
+      .caption
+        p
+          ="In a world where people have their own \"personal time\","
+        p
+          ="the difference of time among individuals brings something new into this world."
+
+      #whatitbrings_description
+        ul.whatitbrings_contents
+          li
+            #whatitbrings_image1
+            #whatitbrings_title1
+            p
+              ="Differences in feeling → differences in time ?"
+            p
+              ="If there are differences in feeling between a couple,"
+            p
+              ="their date would end at different time."
+          li
+        ul.whatitbrings_contents
+          li
+          li
+            #whatitbrings_image2
+            #whatitbrings_title2
+            p
+              ="Let's get out from boring meetings"
+            p
+              ="and do enjoyable work more."
+            p
+              ="A paid per-hour job might disappear."
+        ul.whatitbrings_contents
+          li
+            #whatitbrings_image3
+            #whatitbrings_title3
+            p
+              ="Let's focus more on interesting subjects for you."
+            p
+              ="You don't need to stay in boring classes any more."
+            p
+              ="A class as a place for students to have the same lesson"
+            p
+              ="at the same time might disappear."
+          li
+        ul.whatitbrings_contents
+          li
+          li
+            #whatitbrings_image4
+            #whatitbrings_title4
+            p
+              ="Traffic jam and crowded trains might be over."
+            p
+              ="If people are following their own \"personal time\","
+            p
+              ="problems occurred by that too many people are acting"
+            p
+              ="at the same time might disappear."
+        ul.whatitbrings_contents
+          li
+            #whatitbrings_image5
+            #whatitbrings_title5
+            p
+              ="In an era when people are living in the space,"
+            p
+              ="there might be no need to have 24hours a day,"
+            p
+              ="which was based on the rotation of the earth."
+            p
+              ="People might adopt their \"personal time\""
+            p
+              ="to make their life happier."
+          li
 
       #punchline
+        .en
+          p
+            ="According to Einstein’s Relativity theory, there actually exist"
+          p
+            ="morethan one times that move at different paces."
+          p
+            ="It mightn't be long for humanity before updating"
+          p
+            ="the perception of time by adopting the \"personal time\"."
 
       #name
 
@@ -81,8 +243,13 @@ html
               li
                 ="Bunsyu Hachiro"
           p.organization
-            ="AOI Pro"
+            ="AOI Pro."
           p.member
             ul
               li
                 ="Satoshi Kuno"
+      ul.contact
+        li.title
+          ="CONTACT"
+        li
+          ="support-anotherwatch@uniba.jp"
