@@ -39,6 +39,11 @@ gulp.task 'coffee', ->
     .pipe gulp.dest 'public/js'
     .pipe connect.reload()
 
+gulp.task 'js', ->
+  gulp.src 'src/js/*.js'
+    .pipe gulp.dest 'public/js'
+    .pipe connect.reload()
+
 gulp.task 'connect', ->
   connect.server {
     root: 'public'
@@ -50,11 +55,13 @@ gulp.task 'watch', ->
     'src/jade/*.jade'
     'src/stylus/*.styl'
     'src/coffee/*.coffee'
+    'src/js/*.js'
     'src/image/**'
   ], [
     'jade'
     'stylus'
     'coffee'
+    'js'
     'image'
   ]
 
