@@ -58,12 +58,11 @@ gulp.task 'watch', ->
     'src/js/*.js'
     'src/image/**'
   ], [
-    'jade'
-    'stylus'
-    'coffee'
-    'js'
-    'image'
+    'build'
   ]
+
+gulp.task 'build',
+  [ 'jade', 'stylus', 'coffee', 'js', 'image' ]
 
 gulp.task 'default',
   [ 'connect', 'watch' ]
